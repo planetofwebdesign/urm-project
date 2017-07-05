@@ -4,6 +4,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import {LoggedInGuard} from './logged-in.guard';
+import { AUTH_PROVIDERS } from './auth.service';
+import { appRoutes } from './app.routes';
 
 @NgModule({
   declarations: [
@@ -12,9 +15,13 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    appRoutes
   ],
-  providers: [],
+  providers: [
+              LoggedInGuard, 
+              AUTH_PROVIDERS
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
