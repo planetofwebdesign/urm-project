@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { AdminComponent} from './admin.component';
-import {adminRoutes } from './admin.route'
+import { ManagerComponent} from './manager.component';
+import {managerRoutes } from './manager.route'
 
 @NgModule({
   declarations: [
-   AdminComponent
+   ManagerComponent
   ],
   exports: [
    
   ],
   imports: [
     CommonModule,
-    adminRoutes
+    managerRoutes
   ]
 })
-export class AdminModule { }
+export class ManagerModule { }

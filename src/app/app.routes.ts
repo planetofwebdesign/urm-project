@@ -8,7 +8,8 @@ const routes: Routes =[
 	
 	{ 	
 		path: '', 
-		loadChildren: './component/urm/analyst/analyst.module#AnalystModule',	
+		loadChildren: './component/urm/urm.module#UrmModule',
+		//loadChildren: './component/urm/analyst/analyst.module#AnalystModule',	
 		canActivate: [ LoggedInGuard ] 
 	},
 	
