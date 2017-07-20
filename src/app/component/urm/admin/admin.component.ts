@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./admin.component.css']
 })
 export class AdminComponent implements OnInit {
-
+  isTrue = false;
   constructor() { }
 
   ngOnInit() {
+  }
+
+    showDetails(){
+
+    this.isTrue = true;
+  }
+
+  hideDetails(){
+this.isTrue = false;
   }
 
 }

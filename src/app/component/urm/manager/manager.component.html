@@ -1,3 +1,10 @@
-<p>
-  manager works!
-</p>
+<div class="container">
+ 
+  <div [ngClass]="{'drpdown' : true, 'active': isTrue}" (mouseover)="showDetails()" >
+    <span>2 Managers</span>
+    <ul class="drpdown-list">
+      <li><a href="#">Vikas</a></li>
+      <li><a href="#">Ranjeet</a></li>
+    </ul>
+  </div>
+</div>

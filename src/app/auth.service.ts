@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class AuthService {
 
-  role: string = "analyst";
+  role: string = "admin";
 
   login(user: string, password: string): boolean {
     if (user === 'user' && password === 'password') {
@@ -28,9 +28,9 @@ export class AuthService {
 
   getRole(): number {
 
-    return Math.floor(Math.random() * 4) + 1  ;
+   // return Math.floor(Math.random() * 4) + 1  ;
 
-   /* if(this.role==='admin'){
+    if(this.role==='admin'){
       return 1;
     }else if(this.role==='manager'){
       return 2;
@@ -38,7 +38,7 @@ export class AuthService {
       return 3
     }else{
       return 0;
-    }*/
+    }
   } 
 }
 

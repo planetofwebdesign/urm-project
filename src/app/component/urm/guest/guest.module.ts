@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { AnalystComponent} from './analyst.component';
-import {analystRoutes } from './analyst.route'
+import { GuestComponent} from './guest.component';
+import {GuestRoutes } from './guest.route'
 
 @NgModule({
   declarations: [
-   AnalystComponent
+   GuestComponent
   ],
   exports: [
    
   ],
   imports: [
     CommonModule,
-    analystRoutes
+    GuestRoutes
   ]
 })
-export class AnalystModule { }
+export class GuestModule { }

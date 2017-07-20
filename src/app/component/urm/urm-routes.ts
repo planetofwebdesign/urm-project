@@ -1,6 +1,6 @@
 
 import { Routes, RouterModule } from '@angular/router';
-import { AnalystComponent } from './analyst/analyst.component';
+import { GuestComponent } from './guest/guest.component';
 import {AuthGuard} from '../.././auth.guard';
 const routes: Routes = [
     { path: '', 
@@ -16,8 +16,8 @@ const routes: Routes = [
         loadChildren: './manager/manager.module#ManagerModule'
     },
     {
-        path:'analyst',
-        loadChildren: './analyst/analyst.module#AnalystModule'
+        path:'guest',
+        loadChildren: './guest/guest.module#GuestModule'
     }
 
 ];

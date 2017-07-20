@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./manager.component.css']
 })
 export class ManagerComponent implements OnInit {
-
+isTrue: boolean = false;
   constructor() { }
 
   ngOnInit() {
   }
 
+
+  showDetails(){
+
+    this.isTrue = true;
+  }
 }
